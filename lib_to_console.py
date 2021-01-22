@@ -17,22 +17,22 @@ def display_menu():
     ...
 
 def add_book(lib):
-    input("Введите книгу:")
+    input("Введите книгу для добавления:")
     add(lib=lib)
 
 
 def dell_book(lib):
-    input("Введите книгу:")
+    input("Введите книгу для удаления:")
     dell(lib=lib)
 
 
 def renew_book(lib):
-    input("Введите книгу:")
+    input("Введите книгу для обновления информации:")
     renew(lib=lib)
 
 
 def search_book(lib):
-    input("Введите книгу:")
+    input("Введите книгу для поиска:")
     search(lib=lib)
 
 
