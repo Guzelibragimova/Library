@@ -14,10 +14,15 @@ def add(lib):
     lib['book'] = "Отцы и дети"
     print(lib)
 
+
 def dell(lib):
-    del lib['book']
+    del lib['title']
     print(lib)
 
+
+def renew(lib):
+    lib["author"] = "Иван Тургенев"
+    print(lib)
 
 
 
@@ -25,4 +30,4 @@ def dell(lib):
 if __name__ == '__main__':
     add(lib)
     dell(lib)
-
+    renew(lib)
