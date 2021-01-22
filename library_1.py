@@ -14,7 +14,9 @@ def add(lib):
     lib['book'] = "Отцы и дети"
     print(lib)
 
-
+def dell(lib):
+    del lib['book']
+    print(lib)
 
 
 
@@ -22,4 +24,5 @@ def add(lib):
 
 if __name__ == '__main__':
     add(lib)
+    dell(lib)
 
