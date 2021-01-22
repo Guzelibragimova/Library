@@ -25,8 +25,6 @@ def renew(lib):
     print(lib)
 
 
-
-
 if __name__ == '__main__':
     add(lib)
     dell(lib)
