@@ -1,4 +1,18 @@
-from library_1 import add, dell, renew, search
+# from library_1 import add, dell, renew, search
+
+def add(lib):
+    lib['book'] = "Отцы и дети"
+    print(lib)
+
+
+def dell(lib):
+    del lib['title']
+    print(lib)
+
+
+def renew(lib):
+    lib["author"] = "Иван Тургенев"
+    print(lib)
 
 
 lib = {
