@@ -1,3 +1,6 @@
+import json
+FILENAME = 'lib_json'
+
 lib = {
             "title": "Белый дракон (роман)",
             "year": 2013,
@@ -10,19 +13,27 @@ lib = {
         }
 
 
-def search(lib):
+def to_json():
     """
-    Функция ищет автора и выводит его имя фамилию
+    Сохраняем в json
 
-    :param lib:
     :return:
     """
+    with open('lib.json', 'w', encoding='utf-8') as file:  # открываем файл на запись
+        file.write(json.dumps(lib, ensure_ascii=False, indent=4))
 
-    print(lib.get("author"))
 
+def to_json_lib():
+    """
+    Загружаем из json
 
-
+    :return: словарь lib
+    """
+    with open('lib.json', 'r', encoding='utf-8') as file:  # открываем файл на чтение
+        lib1 = json.load(file)  # загружаем из файла данные в словарь lib
+    return lib1
 
 
 if __name__ == '__main__':
-    search(lib)
+    to_json()
+    to_json_lib()
