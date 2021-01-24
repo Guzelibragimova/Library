@@ -1,3 +1,5 @@
+import json
+FILENAME = 'lib_json'
 # from library_1 import add, dell, renew, search
 
 lib = {
@@ -10,6 +12,28 @@ lib = {
             "discount": 10,
             "author": 'Александр Стула'
         }
+
+
+def to_json():
+    """
+    Сохраняем в json
+
+    :return:
+    """
+    with open('lib.json', 'w', encoding='utf-8') as file:  # открываем файл на запись
+        file.write(json.dumps(lib, ensure_ascii=False, indent=4))
+
+
+def to_json_lib():
+    """
+    Загружаем из json
+
+    :return: словарь lib
+    """
+    with open('lib.json', 'r', encoding='utf-8') as file:  # открываем файл на чтение
+        lib1 = json.load(file)  # загружаем из файла данные в словарь lib
+    return lib1
+
 
 
 def add(lib):
