@@ -6,11 +6,12 @@
 # Функция сортирующая массив элементов A:
 
 
-a = (5,2,4,6,1,3,2,6)
+a = (5, 2, 4, 6, 1, 3, 2, 6)
 
 def merge_mas(a):
     """
     merge_sort sorts by merge sort
+
     :param a:  container of elements to be sorted
     :return: container sorted in ascending order
     """
@@ -45,4 +46,3 @@ if __name__ == '__main__':
     a = (5, 2, 4, 6, 1, 3, 2, 6)
     a = merge_mas(a)
     print(a)
-
