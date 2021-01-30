@@ -35,6 +35,3 @@ def check_brackets(brackets_row: str) -> bool:
             else:
                 return False
     return (not my_brackets_stack)
-
-if __name__ == '__main__':
-    print(check_brackets("{djdjd}"))
